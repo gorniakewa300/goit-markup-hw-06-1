@@ -60,15 +60,6 @@
             Order Service
           </button>
         </div>
-        <div class="modal is-hidden" data-modal>
-          <div class="modal-body">
-            <button type="button" class="modal-close-btn" data-modal-close="">
-              <svg class="close-icon" width="8" height="8">
-                <use href="./images/icons2.svg#icon-close-button"></use>
-              </svg>
-            </button>
-          </div>
-        </div>
       </section>
       <div>
         <ul class="container features-list">
@@ -463,9 +454,78 @@
               </li>
             </ul>
           </div>
+          <div class="subscribe-wrapper">
+            <form class="footer-form" action="#" autocomplete="on">
+              <div class="form-wrapper">
+                <label class="footer-form-label">Subscribe
+                  <input type="email" name="email" placeholder="E-mail" required>
+                </label>
+              </div>
+              <div class="subscribe-button-wrapper">
+                <button class="subscribe-button" type="submit"><span>Subscribe</span>
+                  <svg width="24" height="24">
+                    <use href="./images/icons2.svg#icon-Frame"></use>
+                  </svg>
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </footer>
+
+    <div class="modal is-hidden" data-modal>
+      <div class="modal-body">
+        <button type="button" class="modal-close-btn" data-modal-close>
+          <svg class="close-icon" width="8" height="8">
+            <use href="./images/icons2.svg#icon-close-button"></use>
+          </svg>
+        </button>
+        <h3 class="form-description">Leave your contacts and we will call you back</h3>
+        <form name="order-servis" class="order-service-form ">
+          <label for="username"><span class="input-label">Name</span></label>
+          <div class="form-input-wrapper">
+            <input type="text" name="username" id="username" required/>
+            <svg class="form-input-svg" width="18" height="18">
+              <use href="./images/icons2.svg#icon-person"></use>
+            </svg>
+          </div>
+          <label for="phone"><span class="input-label">Phone</span></label>
+          <div class="form-input-wrapper">
+            <input type="number" name="phone" id="phone" required/>
+            <svg class="form-input-svg" width="18" height="18">
+              <use href="./images/icons2.svg#icon-phone"></use>
+            </svg>
+          </div>
+          <label for="email"><span class="input-label">Email</span></label>
+          <div class="form-input-wrapper">
+            <input type="email" name="email" id="email" required/>
+            <svg class="form-input-svg" width="18" height="18">
+              <use href="./images/icons2.svg#icon-email"></use>
+            </svg>
+          </div>
+
+          <label for="comment"><span class="input-label">Comment</span></label>
+          <div class="form-input-wrapper">
+            <textarea class="form-textarea" name="comment" id="comment" placeholder="Text Input"></textarea>
+          </div>
+          <div class="tc-accept-wrapper">
+            <label for="tc-accept">
+              <input class="checkbox" type="checkbox" id="tc-accept" name="tc-accept" required/>
+              <div class="checkbox-icon">
+                <svg width="14" height="14">
+                  <use href="./images/icons2.svg#icon-check"></use>
+                </svg>
+              </div>
+              <span class="input-label">I accept the terms and conditions of the <a href="#" class="link">Privacy Policy</a></span>
+            </label>
+          </div>
+          <div class="send-wrapper">
+            <button class="form-button" type="submit">Send</button>
+          </div>
+        </form>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>
